@@ -11,6 +11,8 @@ import SwiftData
 struct ContentView: View {
     
     @Query var people : [Person]
+    @State private var path = [Person]()
+    @Environment(\.modelContext) var modelContext
     
     var body: some View {
         NavigationStack {
@@ -23,9 +25,19 @@ struct ContentView: View {
             }
             .navigationTitle("FaceFacts")
             .navigationDestination(for: Person.self) { person in
-                Text(person.name)
+               EditPersonView(person: person)
+            }
+            .toolbar {
+                Button("Add Person", systemImage: "plus", action: addPerson)
             }
         }
+    }
+    
+    func addPerson() {
+        
+        let  person = Person(name: "", emailAddress: "", details: "")
+        modelContext.insert(person)
+        path.append(person)
     }
 }
 
