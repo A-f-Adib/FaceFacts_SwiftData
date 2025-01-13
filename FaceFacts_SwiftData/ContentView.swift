@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var path = [Person]()
     @Environment(\.modelContext) var modelContext
     
+    @State private var searchText = ""
+    
     var body: some View {
         NavigationStack {
             List {
@@ -22,6 +24,7 @@ struct ContentView: View {
                         Text(person.name)
                     }
                 }
+                .onDelete(perform: deletePeople)
             }
             .navigationTitle("FaceFacts")
             .navigationDestination(for: Person.self) { person in
@@ -30,6 +33,7 @@ struct ContentView: View {
             .toolbar {
                 Button("Add Person", systemImage: "plus", action: addPerson)
             }
+            .searchable(text: $searchText)
         }
     }
     
@@ -38,6 +42,14 @@ struct ContentView: View {
         let  person = Person(name: "", emailAddress: "", details: "")
         modelContext.insert(person)
         path.append(person)
+    }
+    
+    
+    func deletePeople(at offsets: IndexSet) {
+        for offset in offsets {
+            let person = people[offset]
+            modelContext.delete(person)
+        }
     }
 }
 
