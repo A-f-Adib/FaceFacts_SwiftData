@@ -13,6 +13,7 @@
 		74B552502D35A946003F978E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B5524F2D35A946003F978E /* Preview Assets.xcassets */; };
 		74B552572D35A9A7003F978E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B552562D35A9A7003F978E /* Person.swift */; };
 		74B552592D35B038003F978E /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B552582D35B038003F978E /* EditPersonView.swift */; };
+		74B5525B2D35B945003F978E /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B5525A2D35B945003F978E /* PeopleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		74B5524F2D35A946003F978E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74B552562D35A9A7003F978E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		74B552582D35B038003F978E /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
+		74B5525A2D35B945003F978E /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				74B552472D35A93D003F978E /* FaceFacts_SwiftDataApp.swift */,
 				74B552492D35A93D003F978E /* ContentView.swift */,
+				74B5525A2D35B945003F978E /* PeopleView.swift */,
 				74B552582D35B038003F978E /* EditPersonView.swift */,
 				74B552562D35A9A7003F978E /* Person.swift */,
 				74B5524B2D35A946003F978E /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74B552572D35A9A7003F978E /* Person.swift in Sources */,
+				74B5525B2D35B945003F978E /* PeopleView.swift in Sources */,
 				74B5524A2D35A93D003F978E /* ContentView.swift in Sources */,
 				74B552482D35A93D003F978E /* FaceFacts_SwiftDataApp.swift in Sources */,
 				74B552592D35B038003F978E /* EditPersonView.swift in Sources */,
