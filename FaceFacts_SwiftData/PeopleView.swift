@@ -14,6 +14,7 @@ struct PeopleView: View {
     @Environment(\.modelContext) var modelContext
     
     var body: some View {
+        
         List {
             ForEach(people) { person in
                 NavigationLink(value: person) {
@@ -32,7 +33,7 @@ struct PeopleView: View {
         }
     }
 }
-
-#Preview {
-    PeopleView()
-}
+//
+//#Preview {
+//    PeopleView()
+//}

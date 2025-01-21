@@ -12,6 +12,7 @@ struct EditPersonView: View {
     @Bindable var person: Person
     
     var body: some View {
+        
         Form {
             Section {
                 TextField("Name", text: $person.name)
