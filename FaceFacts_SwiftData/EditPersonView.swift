@@ -29,7 +29,7 @@ struct EditPersonView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
-
-#Preview {
-    EditPersonView(person: Person(name: "abc", emailAddress: "cde", details: "ghi"))
-}
+//
+//#Preview {
+//    EditPersonView(person: Person(name: "abc", emailAddress: "cde", details: "ghi"))
+//}
