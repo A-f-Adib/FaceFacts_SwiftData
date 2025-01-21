@@ -26,10 +26,10 @@ struct EditPersonView: View {
             }
         }
         .navigationTitle("Edit Person")
-     //   .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-//#Preview {
-//    EditPersonView()
-//}
+#Preview {
+    EditPersonView(person: Person(name: "abc", emailAddress: "cde", details: "ghi"))
+}
