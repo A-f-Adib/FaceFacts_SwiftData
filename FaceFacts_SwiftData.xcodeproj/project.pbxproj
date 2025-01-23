@@ -14,6 +14,7 @@
 		74B552572D35A9A7003F978E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B552562D35A9A7003F978E /* Person.swift */; };
 		74B552592D35B038003F978E /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B552582D35B038003F978E /* EditPersonView.swift */; };
 		74B5525B2D35B945003F978E /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B5525A2D35B945003F978E /* PeopleView.swift */; };
+		74E049ED2D42AF970038B274 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E049EC2D42AF970038B274 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		74B552562D35A9A7003F978E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		74B552582D35B038003F978E /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
 		74B5525A2D35B945003F978E /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		74E049EC2D42AF970038B274 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				74B552472D35A93D003F978E /* FaceFacts_SwiftDataApp.swift */,
 				74B552492D35A93D003F978E /* ContentView.swift */,
 				74B5525A2D35B945003F978E /* PeopleView.swift */,
+				74E049EC2D42AF970038B274 /* Event.swift */,
 				74B552582D35B038003F978E /* EditPersonView.swift */,
 				74B552562D35A9A7003F978E /* Person.swift */,
 				74B5524B2D35A946003F978E /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				74B5525B2D35B945003F978E /* PeopleView.swift in Sources */,
 				74B5524A2D35A93D003F978E /* ContentView.swift in Sources */,
 				74B552482D35A93D003F978E /* FaceFacts_SwiftDataApp.swift in Sources */,
+				74E049ED2D42AF970038B274 /* Event.swift in Sources */,
 				74B552592D35B038003F978E /* EditPersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
