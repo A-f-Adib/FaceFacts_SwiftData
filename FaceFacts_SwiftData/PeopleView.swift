@@ -25,6 +25,12 @@ struct PeopleView: View {
         }
     }
     
+    init(searchString: String = "") {
+        _people = Query(filter: #Predicate { person in
+            true
+        })
+    }
+    
     
     func deletePeople(at offsets: IndexSet) {
         for offset in offsets {
@@ -33,7 +39,7 @@ struct PeopleView: View {
         }
     }
 }
-//
-//#Preview {
-//    PeopleView()
-//}
+
+#Preview {
+    PeopleView()
+}

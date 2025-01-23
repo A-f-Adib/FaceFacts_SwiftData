@@ -16,7 +16,7 @@ struct ContentView: View {
     @State private var searchText = ""
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             
             PeopleView()
             .navigationTitle("FaceFacts")

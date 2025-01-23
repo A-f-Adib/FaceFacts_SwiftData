@@ -20,6 +20,7 @@ struct EditPersonView: View {
                 
                 TextField("Email Address", text: $person.emailAddress)
                     .textContentType(.emailAddress)
+                    .textInputAutocapitalization(.never)
             }
             
             Section("Notes") {
