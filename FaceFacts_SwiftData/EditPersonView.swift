@@ -7,12 +7,14 @@
 
 import SwiftUI
 import SwiftData
+import PhotosUI
 
 struct EditPersonView: View {
     
     @Bindable var person: Person
     @Environment(\.modelContext) var modelContext
     @Binding var navigationPath: NavigationPath
+    @State private var selectedItem : PhotosPickerItem?
     
     @Query(sort: [
         SortDescriptor(\Event.name),
@@ -23,6 +25,14 @@ struct EditPersonView: View {
     var body: some View {
         
         Form {
+            
+            Section {
+                PhotosPicker(selection: $selectedItem, matching: .images) {
+                    Label("Select a photo", systemImage: "person")
+                }
+            }
+            
+            
             Section {
                 TextField("Name", text: $person.name)
                     .textContentType(.name)
