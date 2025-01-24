@@ -42,7 +42,7 @@ struct EditPersonView: View {
                         
                         ForEach(events) { event in
                             Text(event.name)
-                                .tag(event)
+                                .tag(Optional(event))
                         }
                     }
                 }
