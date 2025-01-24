@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741F8F672D43CB91003F408A /* EditEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F8F662D43CB91003F408A /* EditEventView.swift */; };
 		74B552482D35A93D003F978E /* FaceFacts_SwiftDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B552472D35A93D003F978E /* FaceFacts_SwiftDataApp.swift */; };
 		74B5524A2D35A93D003F978E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B552492D35A93D003F978E /* ContentView.swift */; };
 		74B5524C2D35A946003F978E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B5524B2D35A946003F978E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		741F8F662D43CB91003F408A /* EditEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventView.swift; sourceTree = "<group>"; };
 		74B552442D35A93D003F978E /* FaceFacts_SwiftData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceFacts_SwiftData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B552472D35A93D003F978E /* FaceFacts_SwiftDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceFacts_SwiftDataApp.swift; sourceTree = "<group>"; };
 		74B552492D35A93D003F978E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				74E049EC2D42AF970038B274 /* Event.swift */,
 				74B552582D35B038003F978E /* EditPersonView.swift */,
 				74B552562D35A9A7003F978E /* Person.swift */,
+				741F8F662D43CB91003F408A /* EditEventView.swift */,
 				74B5524B2D35A946003F978E /* Assets.xcassets */,
 				74B5524D2D35A946003F978E /* FaceFacts_SwiftData.entitlements */,
 				74B5524E2D35A946003F978E /* Preview Content */,
@@ -157,6 +160,7 @@
 				74B552482D35A93D003F978E /* FaceFacts_SwiftDataApp.swift in Sources */,
 				74E049ED2D42AF970038B274 /* Event.swift in Sources */,
 				74B552592D35B038003F978E /* EditPersonView.swift in Sources */,
+				741F8F672D43CB91003F408A /* EditEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
