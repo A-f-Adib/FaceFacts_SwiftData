@@ -20,7 +20,15 @@ struct EditEventView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 }
-//
-//#Preview {
-//    EditEventView()
-//}
+
+
+#Preview {
+    do {
+        let previewer = try Previewer()
+        
+        return EditEventView(event: previewer.event)
+            .modelContainer(previewer.container)
+    } catch {
+        return Text("Failed to create preview: \(error.localizedDescription)")
+    }
+}

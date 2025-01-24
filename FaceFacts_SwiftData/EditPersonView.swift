@@ -66,7 +66,14 @@ struct EditPersonView: View {
         navigationPath.append(event)
     }
 }
-//
-//#Preview {
-//    EditPersonView(person: Person(name: "abc", emailAddress: "cde", details: "ghi"))
-//}
+
+#Preview {
+    do {
+        let previewer = try Previewer()
+        
+        return EditPersonView(person: previewer.person, navigationPath: .constant(NavigationPath()))
+            .modelContainer(previewer.container)
+    } catch {
+        return Text("Failed to create preview: \(error.localizedDescription)")
+    }
+}
